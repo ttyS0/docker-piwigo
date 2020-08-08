@@ -41,7 +41,7 @@ RUN apt-get -yqq update \
         libonig-dev \
         fontconfig \
         tar \
-   && docker-php-ext-install dom pdo pdo_mysql zip tidy gd curl mbstring xml \
+   && docker-php-ext-install dom pdo pdo_mysql mysqli zip tidy gd curl mbstring xml exif \
    && pecl install imagick \
    && docker-php-ext-enable imagick \
    && curl -SL -o piwigo.zip http://piwigo.org/download/dlcounter.php?code=${PIWIGO_VERSION} \
