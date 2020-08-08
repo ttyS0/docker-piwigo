@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+    ServerName piwigo
+    DocumentRoot "/var/www/piwigo/"
+
+    <Directory "/var/www/piwigo/">
+        Options FollowSymLinks MultiViews
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
